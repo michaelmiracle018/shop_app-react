@@ -7,10 +7,6 @@ import { toast } from "react-toastify";
 import { clearCart } from "../features/products/productSlice";
 import { useNavigate } from "react-router-dom";
 
-
-
-
-
 const Checkout = () => {
 	const [person, setPerson] = useState({
 		name: "",
@@ -36,7 +32,7 @@ const Checkout = () => {
 
 	const shippingCost = 50;
 
-	const totalAmount = totalCartPrice + Number(shippingCost);
+	const totalAmount = (totalCartPrice + Number(shippingCost)).toFixed(2);
 
 	const handlePayment = (e) => {
 		e.preventDefault();
