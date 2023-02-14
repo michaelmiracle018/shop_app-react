@@ -1,0 +1,20 @@
+// Login
+			.addCase(loginUser.pending, (state) => {
+				state.isLoading = true;
+			})
+			.addCase(
+				loginUser.fulfilled,
+				(state, { payload: { error, message, token, user } }) => {
+					// state.isLoading = false;
+					// if (error) {
+					// 	state.error = error;
+					// } else {
+					// 	state.message = message;
+					// 	state.user = user;
+					// 	state.token = token;
+					// }
+				},
+			)
+			.addCase(loginUser.rejected, (state) => {
+				state.isLoading = false;
+			});

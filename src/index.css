@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ========== CSS Variables =========== */
+:root {
+	--spacing: 0.1rem;
+	--radius: 0.25rem;
+	--primary-color: #ff5e3a;
+	--bg-color: #e5e5e5;
+	--default-color: #4f5665;
+	--black-color: #000;
+	--grey-color: #f0f0f0;
+	--white-color: #fff;
+	--lightpink: #ffcce0;
+	--blue: #1a1aff;
+	--custom: #1a1aff;
+	--color: #4d4d4d;
+	--lightblue: #ccccff;
+	--box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--box-shadow-2: 0 5px 15px rgba(255, 94, 58, 0.2);
+	--gradient: linear-gradient(to bottom, #fccb90, #ff9a9e);
+	--btn-gradient: linear-gradient(to bottom, #ff5151 50%, #ff5e3a);
+	--transition: 0.3s ease-in-out all;
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--grey: #757575;
+	--white: #fff;
+	--radius: 0.25rem;
+	--max-width: 1170px;
+	--clr-grey-special: #eae6eb;
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-family: "Montserrat-Italic";
+	background: #e5e5e5;
+	line-height: 1.5;
+	font-size: 0.875rem;
+}
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+button {
+	border: 0;
+	outline: none;
+}
+
+.header__shrink {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 9999;
 }

@@ -1,0 +1,91 @@
+.wrapper {
+	font-family: "mothwing-demo";
+	gap: 2rem;
+
+	@media screen and (min-width: 62.5rem) {
+		display: flex;
+	}
+
+	.left-container {
+		flex: 1;
+
+		& h1 {
+			font-size: 2rem;
+			color: var(--black);
+			font-weight: 400;
+		}
+
+		& .check-out {
+			color: rgb(135, 159, 166);
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+
+		& .first-para,
+		.second-para {
+			color: var(--black);
+			font-size: 1.2rem;
+			font-weight: 500;
+			line-height: 1.2;
+		}
+
+		& .more-btn {
+			background: linear-gradient(
+				180deg,
+				rgba(255, 81, 81, 0.5) 0%,
+				#ff5e3a 100%
+			);
+			border: none;
+			outline: none;
+			font-size: 1rem;
+			font-weight: 400;
+			width: 140px;
+			height: 50px;
+			border-radius: 1rem;
+			cursor: pointer;
+		}
+	}
+
+	.right-container {
+		flex: 1;
+
+		& img {
+			width: 100%;
+			/* min-width: 37.5rem; */
+		}
+
+		@media screen and (min-width: 62.5rem) {
+			min-width: 30rem;
+		}
+	}
+}
+.question__container {
+	min-height: 100vh;
+	/* using flex because of better browser support */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--default-color);
+
+
+	.questions__wrap {
+		width: 80vw;
+		margin: 5rem auto;
+		background: var(--white);
+		border-radius: var(--radius);
+		padding: 2.5rem 2rem;
+		max-width: var(--fixed-width);
+		display: grid;
+		gap: 1rem 2rem;
+
+        img {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        h3 {
+            text-transform: capitalize;
+        }
+	}
+}

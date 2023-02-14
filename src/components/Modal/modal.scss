@@ -1,0 +1,60 @@
+.modal_container {
+	position: fixed;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+	left: 0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    // background-color: #fff;
+
+	.modal_wrap {
+		background: var(--white);
+		width: 80vw;
+		max-width: 400px;
+		border-radius: 10px;
+		padding: 2rem 1rem;
+		text-align: center;
+
+		.modal {
+			h4 {
+				margin-bottom: 0;
+				line-height: 1.5;
+				color: var(--white);
+			}
+
+			.clear-btn,
+			.confirm-btn {
+				margin-top: 1rem;
+			}
+		}
+
+		.btn-container {
+			display: flex;
+			justify-content: space-around;
+
+			.clear-btn,
+			.confirm-btn {
+				background: transparent;
+				padding: 0.5rem 1rem;
+				color: var(--black);
+				border: 1px solid;
+				margin-top: 2.25rem;
+				border-radius: 10px;
+			}
+			.clear-btn:hover,
+			.confirm-btn:hover {
+				background: rgb(189, 185, 115);
+				color: var(--white);
+				border-color: rgb(189, 185, 115);
+			}
+			.confirm-btn {
+				border-color: rgb(189, 185, 115);
+				color: var(--black);
+			}
+		}
+	}
+}

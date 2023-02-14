@@ -1,0 +1,76 @@
+.footer__container {
+	background: rgba(252, 203, 144, 0.15);
+    overflow: hidden;
+       
+
+	.text {
+		font-family: "mothwing-demo";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		color: #4f5665;
+		text-align: left;
+	}
+
+	.head__text {
+	}
+
+	.footer__sub-container {
+		display: grid;
+		grid-template-columns: 1fr;
+
+        @media screen and (max-width: 768px) {
+            grid-row-gap: 2rem;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 2rem;
+        }
+		@media screen and (min-width: 1024px) {
+			grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+		}
+
+
+		.about__us-wrap {
+			h3 {
+				font-family: "mothwing-demo";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 24px;
+				color: #ff5e3a;
+			}
+		}
+
+		.footer__icons-wrap {
+			a {
+				color: #ff5e3a;
+				font-size: 24px;
+				margin-right: 0.5rem;
+			}
+			span {
+				color: #ff5e3a !important;
+			}
+		}
+
+		.footer__contact {
+			span {
+				color: #ff5e3a;
+				font-size: 20px;
+			}
+			h4 {
+				font-family: "mothwing-demo";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 30px;
+				color: #4f5665;
+				text-align: left;
+			}
+		}
+	}
+}

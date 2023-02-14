@@ -1,0 +1,124 @@
+
+nav {
+	background: #e5e5e5;
+	/* box-shadow: var(--shadow-1); */
+	position: relative;
+	top: 0;
+	color: var(--black);
+}
+.nav-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+.nav-toggle {
+	font-size: 1.5rem;
+	color: #fff;
+	background: transparent;
+	border-color: transparent;
+	transition: var(--transition);
+	cursor: pointer;
+}
+.nav-toggle:hover {
+	color: #fff;
+	/* transform: rotate(90deg); */
+}
+.logo {
+	height: 80px;
+}
+.links {
+	display: block;
+}
+.active__link {
+	color: #ff5151 !important;
+}
+
+.links a {
+	color: var(--black);
+	transition: var(--transition);
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	font-family: "Montserrat-Italic";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.links .link:hover {
+	background: transparent;
+	padding-left: 1.5rem;
+}
+.icons {
+	display: none;
+}
+
+.iceCream-sm {
+	display: block;
+}
+
+.links-container {
+	height: 0;
+	overflow: hidden;
+	transition: var(--transition);
+}
+.show-container {
+	height: 10rem;
+}
+
+.cart-number {
+	position: relative;
+	top: -40px;
+	right: -30px;
+	color: rgb(10, 12, 12);
+	font-size: 16px;
+}
+
+
+
+@media screen and (min-width: 50rem) {
+	.nav-center {
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+	.nav-header {
+		padding: 0;
+	}
+	.nav-toggle {
+		display: none;
+	}
+	.links-container {
+		height: auto !important;
+	}
+	.links {
+		display: flex;
+	}
+	.links .iceCream-icon {
+		padding: 0;
+		margin: 0 0.5rem;
+	}
+	.links .iceCream-icon:hover {
+		padding: 0;
+		background: transparent;
+	}
+	.icons {
+		display: block;
+	}
+	.icons .iceCream-icon {
+		margin: 0 0.5rem;
+		color: #fff;
+		transition: var(--transition);
+	}
+	.icons a:hover {
+		color: var(--clr-primary-7);
+	}
+
+	.iceCream-sm {
+		display: none;
+	}
+}

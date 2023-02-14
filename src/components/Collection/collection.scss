@@ -1,0 +1,87 @@
+.collection__container {
+	background: #e5e5e5;
+
+	.collection__wrap {
+		.title {
+			text-align: center;
+			font-family: "Montez-Regular";
+			padding-bottom: 5rem;
+			padding-top: 6.25rem;
+
+			h3 {
+				display: inline-block;
+				border-bottom: 3px solid var(--primary-color);
+				padding-bottom: 0.5rem;
+				margin-bottom: 2rem;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: -0.7rem;
+					right: 2rem;
+					width: 1rem;
+					height: 1rem;
+					border-radius: 50%;
+					background-color: var(--primary-color);
+				}
+			}
+			h1 {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 25px;
+				color: #000000;
+			}
+		}
+		.category__wrap {
+			.category__content {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 1.5rem;
+			}
+		}
+		.card__container {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			gap: 2rem;
+			place-self: center;
+			position: relative;
+			margin-top: 5rem;
+
+			@media screen and (min-width: 48rem) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media screen and (min-width: 64rem) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+			@media screen and (min-width: 90rem) {
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+		.select_wrap {
+			width: 100%;
+			max-width: 1170px;
+			margin: 0 auto;
+		}
+
+		.select {
+			border: 2px solid #d9d9d9;
+			width: 100px;
+			height: 55px;
+			padding: 7px;
+			border-radius: 9px;
+			background-color: transparent;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1rem;
+			line-height: 17px;
+		}
+
+		.select option {
+			color: #000000;
+		}
+	}
+}
