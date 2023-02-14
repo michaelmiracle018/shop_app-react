@@ -5,6 +5,11 @@ import Helmet from "../components/Helmet/Helmet";
 import "../styles/checkout.scss";
 import { toast } from "react-toastify";
 import { clearCart } from "../features/products/productSlice";
+import { useNavigate } from "react-router-dom";
+
+
+
+
 
 const Checkout = () => {
 	const [person, setPerson] = useState({
@@ -14,6 +19,8 @@ const Checkout = () => {
 		country: "",
 		city: "",
 	});
+
+	const navigate = useNavigate()
 
 	const handleChange = (e) => {
 		const name = e.target.name;
@@ -54,8 +61,10 @@ const Checkout = () => {
 				});
 
 				setPerson({ name: "", email: "", number: "", country: "", city: "" });
+				navigate('/')
 			}
-		} else {
+		}
+		else {
 			toast.success("Please Order A Product", {
 				position: "top-right",
 				autoClose: 2000,
