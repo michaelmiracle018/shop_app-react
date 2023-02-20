@@ -16,11 +16,11 @@ export const links = [
 		url: "/About",
 		text: "About Us",
 	},
-	{
-		id: 4,
-		url: "/login",
-		text: "Login",
-	},
+	// {
+	// 	id: 4,
+	// 	url: "/login",
+	// 	text: "Login",
+	// },
 	{
 		id: 5,
 		url: "/cart",

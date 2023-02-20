@@ -8,8 +8,8 @@ import About from "../pages/About";
 import Cart from "../pages/Cart";
 import Order from "../pages/Order";
 import Checkout from "../pages/Checkout";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
+// import Login from "../pages/Login";
+// import Register from "../pages/Register";
 
 const Routers = () => {
 	return (
@@ -24,8 +24,11 @@ const Routers = () => {
 				<Route path="/cart" element={<Cart />} />
 				<Route path="/order" element={<Order />} />
 				<Route path="/checkout" element={<Checkout />} />
+				{/* 
 				<Route path="/login" element={<Login />} />
 				<Route path="/register" element={<Register />} />
+					
+					* /}
 
 				{/*
 				 */}
